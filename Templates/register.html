@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<form class="form-register" action="" method="post" enctype="multipart/form-data">
+
+
+								{% csrf_token %}
+								{{form}}
+                                <!--<div class="form-group">-->
+									<!--<label for="register-reenter-password" class="control-label sr-only">Password</label>-->
+									<!--<input type="password" class="form-control" id="register-reenter-password" value="" placeholder="Re-enter Password">-->
+								<!--</div>-->
+								<!---->
+								<button type="submit" class="btn btn-primary btn-lg btn-block " style="margin-top:10px;">Register</button>
+								<div class="bottom">
+									
+								</div>
+							</form>
+
+
+{% endblock %}
